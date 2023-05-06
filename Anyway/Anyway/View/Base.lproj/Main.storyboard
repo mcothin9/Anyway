@@ -72,6 +72,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Owner Login"/>
                                 <connections>
+                                    <action selector="onOwnerLoginBtnPressed:" destination="ePc-mr-GGx" eventType="touchUpInside" id="9bX-jE-Rcf"/>
                                     <segue destination="iqC-k1-lU7" kind="show" id="V5C-gm-KRi"/>
                                 </connections>
                             </button>
@@ -81,11 +82,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGQ-yx-LB2">
+                                <rect key="frame" x="0.0" y="310" width="412" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="22q-bq-xcW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="7ne-re-sip"/>
+                    <connections>
+                        <outlet property="btnOwnerLogin" destination="U99-l3-1On" id="iJj-zQ-QOH"/>
+                        <outlet property="lblHead" destination="MGQ-yx-LB2" id="aBN-L6-F5x"/>
+                        <outlet property="textPassword" destination="UyS-1L-21K" id="kwT-db-vHe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5L-H2-MPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
