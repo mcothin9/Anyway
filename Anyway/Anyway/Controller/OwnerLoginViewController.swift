@@ -8,7 +8,6 @@
 import UIKit
 
 class OwnerLoginViewController: UIViewController {
-
     @IBOutlet weak var textPassword: UITextField!
     @IBOutlet weak var btnOwnerLogin: UIButton!
     @IBOutlet weak var lblHead: UILabel!
@@ -16,12 +15,14 @@ class OwnerLoginViewController: UIViewController {
     let hasPasswordSetup = UserDefaults.standard.bool(forKey: "PasswordSetup")
     override func viewDidLoad() {
         super.viewDidLoad()
+        textPassword.isSecureTextEntry = true
         if (hasPasswordSetup){
             //print(hasPasswordSetup)
             lblHead.text = ("type in your password")
         }else{
             //print(hasPasswordSetup)
             lblHead.text = ("set up your password")
+            btnOwnerLogin.setTitle("Set Password", for: .normal)
         }
     }
     @IBAction func onOwnerLoginBtnPressed(_ sender: Any) {
@@ -31,6 +32,7 @@ class OwnerLoginViewController: UIViewController {
                 if textPassword.text == storedPassword {
                     print("Password is correct.")
                 } else {
+                    //print(storedPassword)
                     print("Password is incorrect.")
                     let alert = UIAlertController(title: "Error", message: "password error", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
