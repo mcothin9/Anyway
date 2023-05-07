@@ -34,9 +34,15 @@ class OwnerLoginViewController: UIViewController {
                 } else {
                     //print(storedPassword)
                     print("Password is incorrect.")
-                    let alert = UIAlertController(title: "Error", message: "password error", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "", message: "Password Error", preferredStyle: .alert)
+
+                    let attributedTitle = NSAttributedString(string: "ERROR", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+
+                    alert.setValue(attributedTitle, forKey: "attributedTitle")
+
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
+
                 }
         }else{
             //set up password
