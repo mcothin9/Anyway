@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61505B102A08B8150076D69C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61505B0F2A08B8150076D69C /* Storage.swift */; };
+		61505B142A08BA7A0076D69C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61505B132A08BA7A0076D69C /* Question.swift */; };
 		A24032E02A04B7C800FC456E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24032DF2A04B7C800FC456E /* AppDelegate.swift */; };
 		A24032E22A04B7C800FC456E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24032E12A04B7C800FC456E /* SceneDelegate.swift */; };
 		A24032E42A04B7C800FC456E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24032E32A04B7C800FC456E /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61505B0F2A08B8150076D69C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = SOURCE_ROOT; };
+		61505B132A08BA7A0076D69C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = SOURCE_ROOT; };
 		A24032DC2A04B7C800FC456E /* Anyway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anyway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24032DF2A04B7C800FC456E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24032E12A04B7C800FC456E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 		A24032F32A04BF0F00FC456E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				61505B0F2A08B8150076D69C /* Storage.swift */,
+				61505B132A08BA7A0076D69C /* Question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +188,8 @@
 				A24032E42A04B7C800FC456E /* ViewController.swift in Sources */,
 				A24032F72A04BFE800FC456E /* LaunchViewController.swift in Sources */,
 				A24033002A04C04C00FC456E /* QuestionnaireViewController.swift in Sources */,
+				61505B142A08BA7A0076D69C /* Question.swift in Sources */,
+				61505B102A08B8150076D69C /* Storage.swift in Sources */,
 				A24032FC2A04C01400FC456E /* UserLoginViewController.swift in Sources */,
 				A24032E02A04B7C800FC456E /* AppDelegate.swift in Sources */,
 				A24032E22A04B7C800FC456E /* SceneDelegate.swift in Sources */,
