@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OwnerLoginViewController: UIViewController {
+class OwnerLoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textPassword: UITextField!
     @IBOutlet weak var btnOwnerLogin: UIButton!
     @IBOutlet weak var lblHead: UILabel!
@@ -24,6 +24,9 @@ class OwnerLoginViewController: UIViewController {
             lblHead.text = ("set up your password")
             btnOwnerLogin.setTitle("Set Password", for: .normal)
         }
+        
+        // used for resign keyboard when enter is pressed
+        textPassword.delegate = self
     }
     @IBAction func onOwnerLoginBtnPressed(_ sender: Any) {
         //
@@ -54,4 +57,9 @@ class OwnerLoginViewController: UIViewController {
         }
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // resign keyboard when enter is pressed
+        textField.resignFirstResponder()
+        return true
+    }
 }

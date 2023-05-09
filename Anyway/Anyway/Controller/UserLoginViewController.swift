@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserLoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class UserLoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
@@ -22,6 +22,10 @@ class UserLoginViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         self.genderPickerView.delegate = self
         self.genderPickerView.dataSource = self
         
+        // used for resign keyboard when enter is pressed
+        nameTextField.delegate = self
+        ageTextField.delegate = self
+        mobileTextField.delegate = self
     }
 
     // send the user typed in info to the Questionnaire view controller
@@ -74,6 +78,12 @@ class UserLoginViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     func pickerView(_ genderPickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // handle gender selection
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // resign keyboard when enter is pressed
+        textField.resignFirstResponder()
+        return true
     }
 
 }
