@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61505B102A08B8150076D69C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61505B0F2A08B8150076D69C /* Storage.swift */; };
-		61505B142A08BA7A0076D69C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61505B132A08BA7A0076D69C /* Question.swift */; };
+		61505B1B2A09136A0076D69C /* SurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61505B192A09136A0076D69C /* SurveyCell.swift */; };
+		61505B1C2A09136A0076D69C /* SurveyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61505B1A2A09136A0076D69C /* SurveyCell.xib */; };
+		61505B252A091CFC0076D69C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61505B232A091CFC0076D69C /* Question.swift */; };
+		61505B262A091CFC0076D69C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61505B242A091CFC0076D69C /* Storage.swift */; };
+		61505B282A091D050076D69C /* SurveyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61505B272A091D050076D69C /* SurveyResponse.swift */; };
 		A24032E02A04B7C800FC456E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24032DF2A04B7C800FC456E /* AppDelegate.swift */; };
 		A24032E22A04B7C800FC456E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24032E12A04B7C800FC456E /* SceneDelegate.swift */; };
 		A24032E42A04B7C800FC456E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24032E32A04B7C800FC456E /* ViewController.swift */; };
@@ -23,8 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		61505B0F2A08B8150076D69C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = SOURCE_ROOT; };
-		61505B132A08BA7A0076D69C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = SOURCE_ROOT; };
+		61505B192A09136A0076D69C /* SurveyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCell.swift; sourceTree = "<group>"; };
+		61505B1A2A09136A0076D69C /* SurveyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyCell.xib; sourceTree = "<group>"; };
+		61505B232A091CFC0076D69C /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		61505B242A091CFC0076D69C /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		61505B272A091D050076D69C /* SurveyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyResponse.swift; sourceTree = "<group>"; };
 		A24032DC2A04B7C800FC456E /* Anyway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anyway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24032DF2A04B7C800FC456E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24032E12A04B7C800FC456E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,8 +92,9 @@
 		A24032F32A04BF0F00FC456E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				61505B0F2A08B8150076D69C /* Storage.swift */,
-				61505B132A08BA7A0076D69C /* Question.swift */,
+				61505B272A091D050076D69C /* SurveyResponse.swift */,
+				61505B232A091CFC0076D69C /* Question.swift */,
+				61505B242A091CFC0076D69C /* Storage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				A24032E52A04B7C800FC456E /* Main.storyboard */,
+				61505B192A09136A0076D69C /* SurveyCell.swift */,
+				61505B1A2A09136A0076D69C /* SurveyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +137,8 @@
 			dependencies = (
 			);
 			name = Anyway;
+			packageProductDependencies = (
+			);
 			productName = Anyway;
 			productReference = A24032DC2A04B7C800FC456E /* Anyway.app */;
 			productType = "com.apple.product-type.application";
@@ -156,6 +167,8 @@
 				Base,
 			);
 			mainGroup = A24032D32A04B7C800FC456E;
+			packageReferences = (
+			);
 			productRefGroup = A24032DD2A04B7C800FC456E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A24032EC2A04B7C800FC456E /* LaunchScreen.storyboard in Resources */,
+				61505B1C2A09136A0076D69C /* SurveyCell.xib in Resources */,
 				A24032E92A04B7C800FC456E /* Assets.xcassets in Resources */,
 				A24032E72A04B7C800FC456E /* Main.storyboard in Resources */,
 			);
@@ -184,14 +198,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A24032F92A04BFF600FC456E /* OwnerLoginViewController.swift in Sources */,
+				61505B262A091CFC0076D69C /* Storage.swift in Sources */,
 				A24032FE2A04C02200FC456E /* ModifyQuestionViewController.swift in Sources */,
 				A24032E42A04B7C800FC456E /* ViewController.swift in Sources */,
 				A24032F72A04BFE800FC456E /* LaunchViewController.swift in Sources */,
 				A24033002A04C04C00FC456E /* QuestionnaireViewController.swift in Sources */,
-				61505B142A08BA7A0076D69C /* Question.swift in Sources */,
-				61505B102A08B8150076D69C /* Storage.swift in Sources */,
+				61505B252A091CFC0076D69C /* Question.swift in Sources */,
 				A24032FC2A04C01400FC456E /* UserLoginViewController.swift in Sources */,
+				61505B282A091D050076D69C /* SurveyResponse.swift in Sources */,
 				A24032E02A04B7C800FC456E /* AppDelegate.swift in Sources */,
+				61505B1B2A09136A0076D69C /* SurveyCell.swift in Sources */,
 				A24032E22A04B7C800FC456E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4VRMQD4GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anyway/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -366,6 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4VRMQD4GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anyway/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
