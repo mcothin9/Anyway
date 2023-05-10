@@ -18,10 +18,10 @@ class OwnerLoginViewController: UIViewController, UITextFieldDelegate {
         textPassword.isSecureTextEntry = true
         if (hasPasswordSetup){
             //print(hasPasswordSetup)
-            lblHead.text = ("type in your password")
+            lblHead.text = ("Type in your password")
         }else{
             //print(hasPasswordSetup)
-            lblHead.text = ("set up your password")
+            lblHead.text = ("Set up your password")
             btnOwnerLogin.setTitle("Set Password", for: .normal)
         }
         
@@ -37,9 +37,9 @@ class OwnerLoginViewController: UIViewController, UITextFieldDelegate {
                 } else {
                     //print(storedPassword)
                     print("Password is incorrect.")
-                    let alert = UIAlertController(title: "", message: "Password Error", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "", message: "Please retry", preferredStyle: .alert)
 
-                    let attributedTitle = NSAttributedString(string: "ERROR", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+                    let attributedTitle = NSAttributedString(string: "Incorrect password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
 
                     alert.setValue(attributedTitle, forKey: "attributedTitle")
 
